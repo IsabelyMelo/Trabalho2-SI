@@ -3,11 +3,10 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
-import os # Import the os module for path manipulation
+import os
 
 from matplotlib.colors import ListedColormap
-from sklearn.datasets import load_iris # Usado para carregamento e preparo dos dados
+from sklearn.datasets import load_iris
 
 # --- Funções Auxiliares (Implementações Manuais) ---
 
@@ -339,8 +338,7 @@ def run_iris_classification():
     # Compreendendo a distribuição dos dados, tipos e possíveis valores ausentes.
     print("\nPrimeiros dados (Iris):\n", iris_df.head())
     print("\nÚltimos dados (Iris):\n", iris_df.tail())
-    print("\nInformações do DataFrame (Iris):\n")
-    iris_df.info()
+    print("\nInformações do DataFrame (Iris):\n", iris_df.info())
     print("\nValores ausentes (Iris):\n", iris_df.isnull().sum())
     print("\nResumo estatístico (Iris):\n", iris_df.describe())
     print("\nDistribuição das espécies (Iris):\n", iris_df['species'].value_counts())
